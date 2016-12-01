@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-mei</title>
+    <style>
+    	*{padding: 0;margin: 0;}
+    	ul li{ list-style: none; }
+    	.box,.homepage,.subset,.posting{ text-align: center; padding: 10px 0; }
+    	.homepage ul{ padding: 10px 0 0 0; }
+    	.homepage ul li{ padding: 10px 0; }
+    	.box a{ padding: 0 10px; }
+		.textareaOne{ height: 30px; }
+		.textareaTwo{ height: 100px; }
+		.subset p{ padding: 10px 0; }
+		.subset div{ padding: 0 0 10px 0; }
+		.posting textarea{ display: block; margin: 0 auto; }
+		.subset span{ color: red; }
+	</style>
+  </head>
+  <body>
+	<div id="app">
+		<div class='box'>
+	      <router-link to="/list">首页</router-link>
+	      <router-link to="/Posting">发帖</router-link>
+	    </div>
+	    <router-view class="view"></router-view>
+	</div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
